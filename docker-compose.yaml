@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  centos:
+    container_name: centos
+    build: .
+    image: centos-lab
+    volumes:
+      - "$PWD/centos-data:/root/centos-data"
+    tty: true
+    stdin_open: true
